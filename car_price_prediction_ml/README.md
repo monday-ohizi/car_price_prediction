@@ -127,14 +127,14 @@ print(prices)  # [predicted_price]
 ## Installation & Usage
 
 ```bash
-git clone https://github.com/monday-ohizi/car-price-prediction-ml.git
+git clone https://github.com/monday-ohizi/car-price-prediction.git
 cd car-price-prediction-ml
 pip install -r requirements.txt
 ```
 
 **Run notebooks in order:**
 1. `notebooks/notebook_1_eda_baseline.ipynb`
-2. `notebooks/notebook_2_modeling_selection.ipynb`
+2. `notebooks/notebook_2_modeling.ipynb`
 
 ## Key Takeaways
 
@@ -151,6 +151,6 @@ pip install -r requirements.txt
 - Model retraining strategy
 
 ## Author
+**Monday Imoudu**  
 
-**Imoudu Monday Ohizimede**  
 Machine Learning Practitioner
