@@ -107,29 +107,21 @@ A model is deployable if it:
 ## Deployment Readiness
 
 - Entire preprocessing + model stored in **one pipeline**
-- Saved artifact: `models/final_car_price_pipeline.pkl`
+- Saved artifact: `models/final_car_price_pipeline.joblib`
 - Can be directly loaded and used for inference without re-training
 
-**Example usage:**
+## Installation & Usage
 
-```python
-from src.predict import predict_prices
-
-cars = [
+```bash
+git clone https://github.com/monday-ohizi/car_price_prediction.git
+cd car-price-prediction-ml
+pip install -r requirements.txt
+python src/test_predict.py # Run the test script to predict sample cars
+example: cars = [
     {"Make": "Toyota", "Model": "Corolla", "Year": 2018,
      "Engine Size": 1.8, "Mileage": 45000, "Fuel Type": "Petrol",
      "Transmission": "Automatic"}
 ]
-
-prices = predict_prices(cars)
-print(prices)  # [predicted_price]
-```
-## Installation & Usage
-
-```bash
-git clone https://github.com/monday-ohizi/car-price-prediction.git
-cd car-price-prediction-ml
-pip install -r requirements.txt
 ```
 
 **Run notebooks in order:**
@@ -154,3 +146,4 @@ pip install -r requirements.txt
 **Monday Imoudu**  
 
 Machine Learning Practitioner
+
